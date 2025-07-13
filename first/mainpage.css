@@ -1,0 +1,327 @@
+html {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    line-height: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-inner{
+    width:1180px;
+}
+
+a{
+    color: rgba(8, 96, 199, 1);
+    text-decoration: none;
+}
+
+.list-menu-under-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.list-menu-under-header-item{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26.28px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 0;
+
+}
+#list-menu-under-header-item-last{
+    padding: 12px 14px;
+    gap: 10px;
+    border-radius: 40px;
+    background: #28D3A1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    box-shadow: 0px 6px 22px 0px #40629029;
+    color:#fff;
+    margin-left: 185px;
+}
+#list-menu-under-header-item-last > a {
+    color: white;
+}
+
+.start-shopping-section{
+    display: flex;
+    margin-top: 58px;
+    margin-bottom: 24px;
+}
+.start-shopping-section-left{
+    width: 50%;
+    gap: 24px;
+    border-radius: 24px 0px 0px 24px;
+    background: rgba(133, 184, 242, 0.1);
+    padding: 100px;
+}
+.start-shopping-title{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.start-shopping-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.start-shopping-section-button{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    background: rgba(8, 96, 199, 1);
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 70px;
+    display: block;
+    width:fit-content;
+
+}
+.start-shopping-section-picture{
+    width: 50%;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.section-numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 103px;
+    margin-bottom: 112px;
+}
+.section-numbers-quantity{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    color: rgba(40, 211, 161, 1);
+    margin: 0;
+}
+
+.section-numbers-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    width: 70%;
+    text-align: center;
+   display: flex;
+    justify-content: center;
+
+}
+
+.section-numbers-block-header{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.section-numbers-icon{
+    margin-right: 21px;
+}
+.foreign-shopping{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.foreign-shopping-title{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foreign-shopping-title-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(153, 164, 175, 1);
+    margin-bottom: 26px;
+    width: 570px;
+}
+
+.foreign-shopping-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.foreign-shopping-block{
+    width: 49%;
+    background: rgba(133, 184, 242, 0.1);
+    height: fit-content;
+    border-radius: 24px;
+    padding: 24px 48px 24px 48px;
+    margin-top: 24px;
+}
+
+.foreign-shopping-block-button{
+    width: fit-content;
+    padding: 8px 30px;
+    border-radius: 32px;
+    background: rgba(40, 211, 161, 1);
+    color: white;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+}
+
+.foreign-shopping-block-button-section{
+    display: flex;
+    justify-content: right;
+}
+
+.foreign-shopping-block-header{
+    display: flex;
+    margin-bottom: 29px;
+}
+
+.foreign-shopping-block-title{
+    margin-left: 17px;
+}
+
+.calculator-container{
+    border-radius: 40px;
+    background: rgba(239, 241, 244, 1);
+    padding: 53px 200px;
+}
+.calculator__title{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 46.2px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.calculator__text{
+    color: rgba(153, 164, 175, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+.calculator-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.calculator-body__item{
+}
+
+.calculator-body__title{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(153, 164, 175, 1);
+    margin-bottom: 10px;
+}
+
+.calculator-body__dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 13px 16px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.calculator-body__country{
+    display: flex;
+    align-items: center;
+}
+
+.calculator-body__country-name{
+    margin-left: 10px;
+}
+
+.calculator-body__measures{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    padding: 13px 16px;
+    border-radius: 10px;
+}
+
+.calculator-body__measure-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(153, 164, 175, 1);
+}
+.calculator-body__button{
+   width: 100%;
+    padding: 12px 0;
+    border-radius: 37px;
+    background: rgba(40, 211, 161, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+.calculator-body__item-last{
+    display: flex;
+    align-items: flex-end;
+}
+
+.calculator-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.calculator-footer__price{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 46.2px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(48, 58, 69, 1);
+    margin-left: 26px;
+    margin-right: 58px;
+}
+

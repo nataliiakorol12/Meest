@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meest </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="main.js" type="application/javascript"></script>
+</head>
+<body>
+
+<div class="container container-header">
+    <header class="header">
+        <svg class="header-mobile-burger" width="31" height="20" viewBox="0 0 31 20" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.420898" width="31" height="3.26316" rx="1.63158" fill="#0860C7"/>
+            <rect y="16.7368" width="31" height="3.26316" rx="1.63158" fill="#0860C7"/>
+            <rect y="8.57861" width="31" height="3.26316" rx="1.63158" fill="#0860C7"/>
+        </svg>
+
+        <img class="header-logo" src="/img/icons/logo_new%202.svg" alt="logomeest" class="logomeest">
+        <div class="search_container">
+            <input type="search" id="treckingsearch" placeholder="Трекінг / Пошук" class="searchheader">
+            <img src="/img/icons/iconsearch.svg" alt="iconsearch" class="iconsearchheader">
+        </div>
+
+        <ul class="list-menu-header">
+            <li class="list-menu-header-item">
+                <img src="/img/icons/phone1/Vector.svg" alt="phone" class="list-menu-header-icon">
+                <p class="list-menu-header-option">Додаток</p>
+            </li>
+            <li class="list-menu-header-item">
+                <img src="/img/icons/account-plu2.svg" alt="Vector" class="list-menu-header-icon">
+                <p class="list-menu-header-option">Реєстрація</p>
+            </li>
+            <li class="list-menu-header-item">
+                <img src="/img/icons/sign-in.svg" alt="VectorEnter" class="list-menu-header-icon">
+                <p class="list-menu-header-option">Вхід</p>
+            </li>
+        </ul>
+        <div class="header-icons-container">
+            <svg class="header-mobile-search" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="43" height="43" rx="21.5" stroke="#0860C7" stroke-width="2"/>
+                <path d="M26.1172 24.4212L25.8855 24.7632L26.1776 25.0553L29.2676 28.1453C29.4164 28.2941 29.5 28.496 29.5 28.7064C29.5 28.9169 29.4164 29.1187 29.2676 29.2676C29.1187 29.4164 28.9169 29.5 28.7064 29.5C28.496 29.5 28.2941 29.4164 28.1453 29.2676L25.0553 26.1776L24.7632 25.8855L24.4212 26.1172C23.1121 27.0043 21.5193 27.3716 19.954 27.1472C18.3886 26.9228 16.9631 26.123 15.9559 24.9038C14.9487 23.6847 14.4321 22.1339 14.5072 20.5543C14.5822 18.9747 15.2434 17.4798 16.3616 16.3616C17.4798 15.2434 18.9747 14.5822 20.5543 14.5072C22.1339 14.4321 23.6847 14.9487 24.9038 15.9559C26.123 16.9631 26.9228 18.3886 27.1472 19.954C27.3716 21.5193 27.0043 23.1121 26.1172 24.4212ZM18.0328 25.0744C18.8679 25.6321 19.8497 25.9296 20.854 25.9292L25.9292 20.854C25.9296 19.8497 25.6321 18.8679 25.0744 18.0328C24.5167 17.1975 23.7238 16.5465 22.796 16.162C21.8682 15.7775 20.8472 15.6768 19.8622 15.8726C18.8771 16.0684 17.9723 16.552 17.2622 17.2622C16.552 17.9723 16.0684 18.8771 15.8726 19.8622C15.6768 20.8472 15.7775 21.8682 16.162 22.796C16.5465 23.7238 17.1975 24.5167 18.0328 25.0744ZM20.8542 25.9292C22.2001 25.9292 23.491 25.3945 24.4427 24.4427C25.3945 23.491 25.9292 22.2001 25.9292 20.8542L20.8542 25.9292Z"
+                      fill="#0860C7" stroke="#0860C7"/>
+            </svg>
+            <svg class="header-mobile-arrow" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="43" height="43" rx="21.5" stroke="#0860C7" stroke-width="2"/>
+                <path d="M26.7071 29.7071C27.0976 29.3166 27.0976 28.6834 26.7071 28.2929L20.4142 22L26.7071 15.7071C27.0976 15.3166 27.0976 14.6834 26.7071 14.2929C26.3166 13.9024 25.6834 13.9024 25.2929 14.2929L18.2929 21.2929C17.9024 21.6834 17.9024 22.3166 18.2929 22.7071L25.2929 29.7071C25.6834 30.0976 26.3166 30.0976 26.7071 29.7071Z"
+                      fill="#0860C7"/>
+            </svg>
+        </div>
+
+    </header>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="menu-under-header">
+            <ul class="list-menu-under-header">
+                <li class="list-menu-under-header-item"><a href="/">Країни</a></li>
+                <li class="list-menu-under-header-item"><a href="/"> Адреса за кордоном</a></li>
+                <li class="list-menu-under-header-item"><a href="/">Shop service</a></li>
+                <li class="list-menu-under-header-item"><a href="/">Новини</a></li>
+                <li class="list-menu-under-header-item"><a href="/">Допомога</a></li>
+                <li class="list-menu-under-header-item" id="list-menu-under-header-item-last"><a href="/">Швидке
+                    замовлення</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="pass">
+            <p class="pass-item">Головна</p>
+            <svg class="pass-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.08146 11.0511C0.706537 10.6828 0.706204 10.0914 1.08071 9.72269L4.86248 5.99984L1.08071 2.27699C0.706204 1.90831 0.706537 1.31687 1.08146 0.948596C1.46437 0.572473 2.09108 0.572473 2.47399 0.948596L6.90355 5.29964C7.29888 5.68796 7.29888 6.31171 6.90355 6.70004L2.47399 11.0511C2.09108 11.4272 1.46437 11.4272 1.08146 11.0511Z"
+                      fill="#303A45"/>
+            </svg>
+            <p class="pass-item2">КалендарКалендарКалендарКалендарКалендарКалендарКалендарКалендар</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="start-shopping-section">
+            <div class="start-shopping-section-left">
+                <h1 class="start-shopping-title">Онлайн-шопінг календар Meest Shopping. Всі знижки в одному місці</h1>
+                <p class="start-shopping-text">Обирайте день і переглядайте всі доступні знижки"</p>
+                <a href="/" class="start-shopping-section-button">Почати шопінг</a>
+            </div>
+            <div class="start-shopping-section-picture">
+                <img class="start-shopping-picture" src="/img/icons/mainpicture.png"></div>
+        </div>
+
+        <div class="year-section-mobile">
+            <p class="year-section-mobile-title">Обрати рік</p>
+            <div class="year-section-mobile-button">
+                <p class="year-section-mobile-button-left">2024</p>
+                <svg class="year-section-mobile-button-icon" width="16" height="10" viewBox="0 0 16 10" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.206 1.09858C15.5355 1.42809 15.5355 1.96232 15.206 2.29182L8.59662 8.90106C8.26711 9.23056 7.73288 9.23055 7.40338 8.90104C7.07388 8.57154 7.07388 8.0373 7.40339 7.7078L14.0128 1.09857C14.3423 0.769067 14.8765 0.769072 15.206 1.09858Z"
+                          fill="#303A45"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.794003 1.09858C1.1235 0.769072 1.65774 0.769066 1.98725 1.09857L8.59662 7.7078C8.92613 8.0373 8.92614 8.57154 8.59664 8.90105C8.26714 9.23055 7.7329 9.23056 7.40339 8.90106L0.794016 2.29182C0.464507 1.96232 0.464502 1.42809 0.794003 1.09858Z"
+                          fill="#303A45"/>
+                </svg>
+            </div>
+
+            <p class="year-section-mobile-title">Обрати рік</p>
+            <div class="year-section-mobile-button">
+                <p class="year-section-mobile-button-left">2024</p>
+                <svg class="year-section-mobile-button-icon" width="16" height="10" viewBox="0 0 16 10" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.206 1.09858C15.5355 1.42809 15.5355 1.96232 15.206 2.29182L8.59662 8.90106C8.26711 9.23056 7.73288 9.23055 7.40338 8.90104C7.07388 8.57154 7.07388 8.0373 7.40339 7.7078L14.0128 1.09857C14.3423 0.769067 14.8765 0.769072 15.206 1.09858Z"
+                          fill="#303A45"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.794003 1.09858C1.1235 0.769072 1.65774 0.769066 1.98725 1.09857L8.59662 7.7078C8.92613 8.0373 8.92614 8.57154 8.59664 8.90105C8.26714 9.23055 7.7329 9.23056 7.40339 8.90106L0.794016 2.29182C0.464507 1.96232 0.464502 1.42809 0.794003 1.09858Z"
+                          fill="#303A45"/>
+                </svg>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container container-main">
+    <div class="container-inner">
+        <div>
+            <div class="month-section-container">
+                <div class="month-section">
+                    <p class="months-section-year">2024</p>
+                    <svg class="months-section-year-icon" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.948753 1.08146C1.31703 0.706537 1.90847 0.706204 2.27714 1.08071L6 4.86248L9.72285 1.08071C10.0915 0.706204 10.683 0.706537 11.0512 1.08146C11.4274 1.46437 11.4274 2.09108 11.0512 2.47399L6.7002 6.90355C6.31187 7.29888 5.68812 7.29888 5.29979 6.90355L0.948754 2.47399C0.572632 2.09108 0.572631 1.46437 0.948753 1.08146Z"
+                              fill="#303A45"/>
+                    </svg>
+                    <div class="year-choice">
+                        <p class="year-choice-2024">2024</p>
+                        <p class="year-choice-2025">2025</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="months-list">
+                    <li class="months-list-item ">Січень</li>
+                    <li class="months-list-item ">Лютий</li>
+                    <li class="months-list-item ">Березень</li>
+                    <li class="months-list-item ">Квітень</li>
+                    <li class="months-list-item ">Травень</li>
+                    <li class="months-list-item ">Червень</li>
+                    <li class="months-list-item ">Липень</li>
+                    <li class="months-list-item ">Серпень</li>
+                    <li class="months-list-item ">Вересень</li>
+                    <li class="months-list-item ">Жовтень</li>
+                    <li class="months-list-item ">Листопад</li>
+                    <li class="months-list-item months-list-item-active">Грудень</li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="calendar-header">
+            <h1 class="calendar-header-title">Календар діючих знижок на грудень 2024</h1>
+            <p class="calendar-header-text">Обирай для себе зручний спосіб купувати онлайн за кордоном та доставляй свої
+                покупки в Україну.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="calendar-change-mobile">
+        <svg class="calendar-change-left-mobile" width="42" height="42" viewBox="0 0 42 42" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 39.375C16.1266 39.375 11.4529 37.4391 8.00691 33.9931C4.56093 30.5471 2.625 25.8734 2.625 21C2.625 16.1266 4.56093 11.4529 8.00691 8.00691C11.4529 4.56093 16.1266 2.625 21 2.625C25.8734 2.625 30.5471 4.56093 33.9931 8.00691C37.4391 11.4529 39.375 16.1266 39.375 21C39.375 25.8734 37.4391 30.5471 33.9931 33.9931C30.5471 37.4391 25.8734 39.375 21 39.375ZM21 -9.17939e-07C15.4305 -1.16139e-06 10.089 2.21249 6.15076 6.15076C2.2125 10.089 1.16139e-06 15.4305 9.17939e-07 21C6.74487e-07 26.5695 2.21249 31.911 6.15076 35.8492C10.089 39.7875 15.4305 42 21 42C26.5695 42 31.911 39.7875 35.8492 35.8492C39.7875 31.911 42 26.5695 42 21C42 15.4305 39.7875 10.089 35.8492 6.15076C31.911 2.21249 26.5695 -6.74487e-07 21 -9.17939e-07ZM30.1875 19.6875C30.5356 19.6875 30.8694 19.8258 31.1156 20.0719C31.3617 20.3181 31.5 20.6519 31.5 21C31.5 21.3481 31.3617 21.6819 31.1156 21.9281C30.8694 22.1742 30.5356 22.3125 30.1875 22.3125L14.9809 22.3125L20.6168 27.9457C20.8632 28.1922 21.0017 28.5265 21.0017 28.875C21.0017 29.2235 20.8632 29.5578 20.6168 29.8042C20.3703 30.0507 20.036 30.1892 19.6875 30.1892C19.339 30.1892 19.0047 30.0507 18.7582 29.8042L10.8833 21.9292C10.761 21.8073 10.664 21.6625 10.5979 21.503C10.5317 21.3436 10.4977 21.1726 10.4977 21C10.4977 20.8274 10.5317 20.6564 10.5979 20.497C10.664 20.3375 10.761 20.1927 10.8833 20.0707L18.7583 12.1957C19.0047 11.9493 19.339 11.8108 19.6875 11.8108C20.036 11.8108 20.3703 11.9493 20.6168 12.1957C20.8632 12.4422 21.0017 12.7765 21.0017 13.125C21.0017 13.4735 20.8632 13.8078 20.6168 14.0542L14.9809 19.6875L30.1875 19.6875Z"
+                  fill="#303A45"/>
+        </svg>
+        <svg class="calendar-change-right-mobile" width="42" height="42" viewBox="0 0 42 42" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 39.375C25.8734 39.375 30.5471 37.4391 33.9931 33.9931C37.4391 30.5471 39.375 25.8734 39.375 21C39.375 16.1266 37.4391 11.4529 33.9931 8.00691C30.5471 4.56093 25.8734 2.625 21 2.625C16.1266 2.625 11.4529 4.56093 8.00691 8.00691C4.56093 11.4529 2.625 16.1266 2.625 21C2.625 25.8734 4.56093 30.5471 8.00691 33.9931C11.4529 37.4391 16.1266 39.375 21 39.375ZM21 -9.17939e-07C26.5695 -1.16139e-06 31.911 2.21249 35.8492 6.15076C39.7875 10.089 42 15.4305 42 21C42 26.5695 39.7875 31.911 35.8492 35.8492C31.911 39.7875 26.5695 42 21 42C15.4305 42 10.089 39.7875 6.15076 35.8492C2.21249 31.911 -6.74487e-07 26.5695 -9.17939e-07 21C-1.16139e-06 15.4305 2.21249 10.089 6.15076 6.15076C10.089 2.21249 15.4305 -6.74487e-07 21 -9.17939e-07ZM11.8125 19.6875C11.4644 19.6875 11.1306 19.8258 10.8844 20.0719C10.6383 20.3181 10.5 20.6519 10.5 21C10.5 21.3481 10.6383 21.6819 10.8844 21.9281C11.1306 22.1742 11.4644 22.3125 11.8125 22.3125L27.0191 22.3125L21.3832 27.9457C21.1368 28.1922 20.9983 28.5265 20.9983 28.875C20.9983 29.2235 21.1368 29.5578 21.3832 29.8042C21.6297 30.0507 21.964 30.1892 22.3125 30.1892C22.661 30.1892 22.9953 30.0507 23.2418 29.8042L31.1167 21.9292C31.239 21.8073 31.336 21.6625 31.4021 21.503C31.4683 21.3436 31.5023 21.1726 31.5023 21C31.5023 20.8274 31.4683 20.6564 31.4021 20.497C31.336 20.3375 31.239 20.1927 31.1167 20.0707L23.2417 12.1957C22.9953 11.9493 22.661 11.8108 22.3125 11.8108C21.964 11.8108 21.6297 11.9493 21.3832 12.1957C21.1368 12.4422 20.9983 12.7765 20.9983 13.125C20.9983 13.4735 21.1368 13.8078 21.3832 14.0542L27.0191 19.6875L11.8125 19.6875Z"
+                  fill="#303A45"/>
+        </svg>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="calendar">
+            <div class="calendar-item">
+                <div class="calendar-item-transition">
+                    <div class="calendar-item-transition-header">
+                        <p class="calendar-item-transition-date">4 грудня</p>
+                        <p class="calendar-item-transition-year">2024</p>
+                    </div>
+                    <p class="calendar-item-transition-title">Представлені 15 магазинів, в яких діють знижки</p>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-item-transition-footer">
+                        <p class="calendar-item-transition-shop">1. Massimo Dutti</p>
+                        <div class="calendar-item-transition-sale">
+                            <p class="calendar-item-transition-upto">до</p>
+                            <p class="calendar-item-transition-discount">-50%</p>
+                        </div>
+                    </div>
+                    <div class="calendar-item-transition-link-container">
+                        <a href="/" class="calendar-item-transition-link">Детальніше</a>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.90662 9.70841H12.2841L8.62412 13.1651C8.33162 13.4413 8.33162 13.8947 8.62412 14.1709C8.91662 14.4472 9.38912 14.4472 9.68162 14.1709L14.6241 9.503C14.9166 9.22675 14.9166 8.7805 14.6241 8.50425L9.68912 3.82925C9.54899 3.69661 9.35875 3.62207 9.16037 3.62207C8.96198 3.62207 8.77174 3.69661 8.63162 3.82925C8.33912 4.1055 8.33912 4.55175 8.63162 4.828L12.2841 8.29175H3.90662C3.49412 8.29175 3.15662 8.6105 3.15662 9.00008C3.15662 9.38966 3.49412 9.70841 3.90662 9.70841Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+
+
+                </div>
+                <div class="calendar-item-header">
+                    <p class="calendar-item-header-shops">15 магазинів</p>
+                    <p class="calendar-item-header-sale">до -70%</p>
+                </div>
+                <div class="calendar-item-middle">
+                    <p class="calendar-item-middle-left">грудня</p>
+                    <p class="calendar-item-date">01</p>
+                    <p class="calendar-item-middle-right">2024</p>
+                </div>
+                <div class="calendar-item-link-container">
+                    <a href="/" class="calendar-item-link">Відкрити </a>
+                    <svg class="calendar-item-link-icon" width="12" height="11" viewBox="0 0 12 11" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.906555 6.25773H9.28405L5.62405 9.7144C5.33155 9.99065 5.33155 10.444 5.62405 10.7202C5.91655 10.9965 6.38905 10.9965 6.68155 10.7202L11.6241 6.05231C11.9166 5.77606 11.9166 5.32981 11.6241 5.05356L6.68905 0.378564C6.54893 0.245927 6.35869 0.171387 6.1603 0.171387C5.96192 0.171387 5.77168 0.245927 5.63156 0.378564C5.33906 0.654814 5.33906 1.10106 5.63156 1.37731L9.28405 4.84106H0.906555C0.494055 4.84106 0.156555 5.15981 0.156555 5.5494C0.156555 5.93898 0.494055 6.25773 0.906555 6.25773Z"
+                              fill="#0860C7"/>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="calendar-item container-main">
+                <div class="calendar-item-header">
+                    <p class="calendar-item-header-shops">15 магазинів</p>
+                    <p class="calendar-item-header-sale">до -70%</p>
+                </div>
+                <div class="calendar-item-middle">
+                    <p class="calendar-item-middle-left">грудня</p>
+                    <p class="calendar-item-date">01</p>
+                    <p class="calendar-item-middle-right">2024</p>
+                </div>
+                <div class="calendar-item-link-container">
+                    <a href="/" class="calendar-item-link">Відкрити </a>
+                    <svg class="calendar-item-link-icon" width="12" height="11" viewBox="0 0 12 11" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.906555 6.25773H9.28405L5.62405 9.7144C5.33155 9.99065 5.33155 10.444 5.62405 10.7202C5.91655 10.9965 6.38905 10.9965 6.68155 10.7202L11.6241 6.05231C11.9166 5.77606 11.9166 5.32981 11.6241 5.05356L6.68905 0.378564C6.54893 0.245927 6.35869 0.171387 6.1603 0.171387C5.96192 0.171387 5.77168 0.245927 5.63156 0.378564C5.33906 0.654814 5.33906 1.10106 5.63156 1.37731L9.28405 4.84106H0.906555C0.494055 4.84106 0.156555 5.15981 0.156555 5.5494C0.156555 5.93898 0.494055 6.25773 0.906555 6.25773Z"
+                              fill="#0860C7"/>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="calendar-item container-main">
+                <div class="calendar-item-header">
+                    <p class="calendar-item-header-shops">15 магазинів</p>
+                    <p class="calendar-item-header-sale">до -70%</p>
+                </div>
+                <div class="calendar-item-middle">
+                    <p class="calendar-item-middle-left">грудня</p>
+                    <p class="calendar-item-date">01</p>
+                    <p class="calendar-item-middle-right">2024</p>
+                </div>
+                <div class="calendar-item-link-container">
+                    <a href="/" class="calendar-item-link">Відкрити </a>
+                    <svg class="calendar-item-link-icon" width="12" height="11" viewBox="0 0 12 11" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.906555 6.25773H9.28405L5.62405 9.7144C5.33155 9.99065 5.33155 10.444 5.62405 10.7202C5.91655 10.9965 6.38905 10.9965 6.68155 10.7202L11.6241 6.05231C11.9166 5.77606 11.9166 5.32981 11.6241 5.05356L6.68905 0.378564C6.54893 0.245927 6.35869 0.171387 6.1603 0.171387C5.96192 0.171387 5.77168 0.245927 5.63156 0.378564C5.33906 0.654814 5.33906 1.10106 5.63156 1.37731L9.28405 4.84106H0.906555C0.494055 4.84106 0.156555 5.15981 0.156555 5.5494C0.156555 5.93898 0.494055 6.25773 0.906555 6.25773Z"
+                              fill="#0860C7"/>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="calendar-item container-main">
+                <div class="calendar-item-header">
+                    <p class="calendar-item-header-shops">15 магазинів</p>
+                    <p class="calendar-item-header-sale">до -70%</p>
+                </div>
+                <div class="calendar-item-middle">
+                    <p class="calendar-item-middle-left">грудня</p>
+                    <p class="calendar-item-date">01</p>
+                    <p class="calendar-item-middle-right">2024</p>
+                </div>
+                <div class="calendar-item-link-container">
+                    <a href="/" class="calendar-item-link">Відкрити </a>
+                    <svg class="calendar-item-link-icon" width="12" height="11" viewBox="0 0 12 11" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.906555 6.25773H9.28405L5.62405 9.7144C5.33155 9.99065 5.33155 10.444 5.62405 10.7202C5.91655 10.9965 6.38905 10.9965 6.68155 10.7202L11.6241 6.05231C11.9166 5.77606 11.9166 5.32981 11.6241 5.05356L6.68905 0.378564C6.54893 0.245927 6.35869 0.171387 6.1603 0.171387C5.96192 0.171387 5.77168 0.245927 5.63156 0.378564C5.33906 0.654814 5.33906 1.10106 5.63156 1.37731L9.28405 4.84106H0.906555C0.494055 4.84106 0.156555 5.15981 0.156555 5.5494C0.156555 5.93898 0.494055 6.25773 0.906555 6.25773Z"
+                              fill="#0860C7"/>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="calendar-item  container-main calendar-item-green">
+                <div class="calendar-item-header">
+                    <p class="calendar-item-header-shops">15 магазинів</p>
+                    <p class="calendar-item-header-sale">до -70%</p>
+                </div>
+                <div class="calendar-item-middle">
+                    <p class="calendar-item-middle-left">грудня</p>
+                    <p class="calendar-item-date">01</p>
+                    <p class="calendar-item-middle-right">2024</p>
+                </div>
+                <div class="calendar-item-link-container">
+                    <a href="/" class="calendar-item-link">Відкрити </a>
+                    <svg class="calendar-item-link-icon" width="12" height="11" viewBox="0 0 12 11" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.906555 6.25773H9.28405L5.62405 9.7144C5.33155 9.99065 5.33155 10.444 5.62405 10.7202C5.91655 10.9965 6.38905 10.9965 6.68155 10.7202L11.6241 6.05231C11.9166 5.77606 11.9166 5.32981 11.6241 5.05356L6.68905 0.378564C6.54893 0.245927 6.35869 0.171387 6.1603 0.171387C5.96192 0.171387 5.77168 0.245927 5.63156 0.378564C5.33906 0.654814 5.33906 1.10106 5.63156 1.37731L9.28405 4.84106H0.906555C0.494055 4.84106 0.156555 5.15981 0.156555 5.5494C0.156555 5.93898 0.494055 6.25773 0.906555 6.25773Z"
+                              fill="#0860C7"/>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="calendar-item container-main">
+                <div class="calendar-item-header">
+                    <p class="calendar-item-header-shops">15 магазинів</p>
+                    <p class="calendar-item-header-sale">до -70%</p>
+                </div>
+                <div class="calendar-item-middle">
+                    <p class="calendar-item-middle-left">грудня</p>
+                    <p class="calendar-item-date">01</p>
+                    <p class="calendar-item-middle-right">2024</p>
+                </div>
+                <div class="calendar-item-link-container">
+                    <a href="/" class="calendar-item-link">Відкрити </a>
+                    <svg class="calendar-item-link-icon" width="12" height="11" viewBox="0 0 12 11" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.906555 6.25773H9.28405L5.62405 9.7144C5.33155 9.99065 5.33155 10.444 5.62405 10.7202C5.91655 10.9965 6.38905 10.9965 6.68155 10.7202L11.6241 6.05231C11.9166 5.77606 11.9166 5.32981 11.6241 5.05356L6.68905 0.378564C6.54893 0.245927 6.35869 0.171387 6.1603 0.171387C5.96192 0.171387 5.77168 0.245927 5.63156 0.378564C5.33906 0.654814 5.33906 1.10106 5.63156 1.37731L9.28405 4.84106H0.906555C0.494055 4.84106 0.156555 5.15981 0.156555 5.5494C0.156555 5.93898 0.494055 6.25773 0.906555 6.25773Z"
+                              fill="#0860C7"/>
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="frequent-questions">
+            <div class="fq-title-section">
+                <h1 class="fq-title">Часті запитання</h1>
+            </div>
+            <div class="fq-main-section-container">
+                <div class="fq-column-left">
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fq-column-right">
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                    <div class="fq-section-item-container">
+                        <div class="fq-section-item-header">
+                            <p class="fq-section-item-number">1</p>
+                            <p class="fq-section-item-option">Зареєструйся у Meest Shopping</p>
+
+                            <svg class="fq-section-item-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.9995 0C11.0527 0 10.2852 0.767512 10.2852 1.71429V10.2857H1.71429C0.767512 10.2857 0 11.0532 0 12C0 12.9468 0.767512 13.7143 1.71429 13.7143H10.2852V22.2857C10.2852 23.2325 11.0527 24 11.9995 24C12.9463 24 13.7138 23.2325 13.7138 22.2857V13.7143H22.2857C23.2325 13.7143 24 12.9468 24 12C24 11.0532 23.2325 10.2857 22.2857 10.2857H13.7138V1.71429C13.7138 0.767512 12.9463 0 11.9995 0Z"
+                                      fill="#0860C7"/>
+                            </svg>
+                        </div>
+                        <div class="fq-section-item-body">
+                            <p class="fq-section-item-active-text">Перш за все, необхідно зареєструватися у
+                                персональному кабінеті на сайті
+                                meest.shopping.com, або у мобільному застосунку myMeest. Зареєструвавшись, ти отримаєш
+                                особистий ID-номер, який потрібен для доставки покупок в Україну.</p>
+                            <a href="/" class="fq-section-item-active-button">Зареєструватись</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-inner">
+        <div class="section-advantages">
+            <h1 class="section-advantages-title">Доставка з Польщі в Україну: переваги та зручності</h1>
+            <p class="section-advantages-text">Онлайн-шопінг став не просто способом придбання товарів, а справжнім
+                стилем життя. Він дає змогу зручно та ефективно здійснювати покупки, порівнювати ціни та вибирати
+                найкращі пропозиції. Шопінг за кордоном відкриває доступ до нових брендів, унікальних товарів та
+                ексклюзивних акцій, які не завжди доступні на внутрішньому ринку. Однією з популярних країн є
+                Польща,
+                оскільки доставка з Польщі в Україну займає мінімум часу, а купувати на їх сайтах зручно та
+                вигідно.</p>
+            <h1 class="section-advantages-title">Що можна купувати в Польщі</h1>
+            <p class="section-advantages-text">Як було сказано вище, однією з країн, яка привертає увагу українських
+                покупців, є Польща. Її великий асортимент товарів, доступні ціни та висока якість роблять її
+                привабливою
+                локацією для онлайн-шопінгу. Розглянемо більш детально переваги, які ви отримаєте, якщо вирішите
+                замовити товари з Польщі:<br>
+
+                <br>Доступні ціни. Товари із Польщі зазвичай коштують дешевше, ніж в Україні, що робить покупки
+                вигіднішими для покупців. Якщо ж моніторити ринок, відстежувати акції, купувати у період
+                розпродажів, то
+                бажану річ можна замовити навіть зі знижкою до 70%.
+                Ширший асортимент. Великий вибір товарів у різних категоріях, таких як одяг, побутова техніка,
+                косметика, спортивні товари та дитячі товари, дає можливість знайти все необхідне. Користувачам
+                доступні
+                як монобрендові магазини, так і маркетплейси, де в одному каталозі зібрані пропозиції
+                найрізноманітніших
+                торгових марок.
+                Швидка доступність новинок. Польща відома своєю швидкою реакцією на нові тренди та швидкою появою
+                оновлених моделей товарів. Якщо виробник випускає новинку на ринок, то вона відразу потрапляє на
+                сторінки польських магазинів. А оперативна доставка товарів з Польщі в Україну дасть можливість
+                тестувати новинку вже за кілька днів після покупки.
+                Оригінальний товар. Покупці можуть бути впевнені у якості та оригінальності товарів, куплених в
+                Польщі.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="get-in-touch-container" id="a">
+        <div class="get-in-touch-section-left">
+            <h1 class="get-in-touch-title">Отримуй новини першим</h1>
+            <p class="get-in-touch-text">Дізнавайся про знижки, розпродажі, акції
+                та новини закордонного шопінгу</p>
+        </div>
+        <div class="get-in-touch-section-right">
+            <p class="get-in-touch-right-title">E-mail</p>
+            <input type="email" placeholder="Введіть ваш E-mail" id="email" class="get-in-touch-section-email">
+            <a href="/" class="get-in-touch-section-button">Підписатись</a>
+        </div>
+    </div>
+</div>
+
+<div class="footer-background">
+    <div class="container-inner">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-options">
+                    <ul class="footer-options-list">
+                        <li class="footer-options-list-item"><b>Управління доставкою</b></li>
+                        <li class="footer-options-list-item">Адреса за кордоном</li>
+                        <li class="footer-options-list-item">Викуп товарів</li>
+                        <li class="footer-options-list-item">Самостійні покупки</li>
+                        <li class="footer-options-list-item">Вигідні пропозиції</li>
+                        <li class="footer-options-list-item">Спільний кошик</li>
+                    </ul>
+                </div>
+                <div class="footer-change-country">
+                    <h5 class="footer-change-country-title">Змінити країну</h5>
+                    <p class="footer-change-country-text">Ви можете змінити країну
+                        і вивчити вміст сайту для іншого регіону.</p>
+                    <div class="footer-change-country-bottom-container">
+                        <div class="footer-change-country-bottom">
+                        <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                            <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                        </svg>
+                        <p class="footer-change-country-bottom-name">Ukraine</p>
+                        <svg class="footer-change-country-bottom-icon" width="22" height="22" viewBox="0 0 22 22"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M20.5365 6.96086L11 16.4972L9.54156 15.0388L19.0781 5.50244L20.5365 6.96086Z"
+                                  fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.92183 5.50244L12.4584 15.0388L11 16.4972L1.46344 6.96086L2.92183 5.50244Z"
+                                  fill="white"/>
+                        </svg>
+                        </div>
+                        <div class="footer-change-country-bottom-active">
+                            <div class="footer-bottom-active-search-container">
+                                <input class="footer-bottom-active-search" type="text" placeholder="Пошук">
+                                <svg class="searchbar" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0946 18.9636L17.843 14.7149C19.1596 12.7733 19.7047 10.4109 19.3717 8.08916C19.0387 5.76744 17.8515 3.65316 16.042 2.15932C14.2326 0.665472 11.9309 -0.100642 9.58643 0.0106206C7.24199 0.121883 5.02327 1.10253 3.36364 2.76101C1.704 4.4195 0.722676 6.63668 0.611336 8.97949C0.499996 11.3223 1.26664 13.6224 2.76152 15.4306C4.25641 17.2388 6.37215 18.4252 8.69547 18.758C11.0188 19.0907 13.3828 18.5461 15.3258 17.2303L19.5775 21.479C19.9113 21.8126 20.364 22 20.8361 22C21.3081 22 21.7609 21.8126 22.0946 21.479C22.4284 21.1455 22.616 20.6931 22.616 20.2213C22.616 19.7496 22.4284 19.2972 22.0946 18.9636ZM10.0314 15.7152C8.78564 15.7157 7.56769 15.3469 6.53165 14.6556C5.4956 13.9642 4.68802 12.9813 4.21105 11.8313C3.73408 10.6812 3.60916 9.41559 3.85208 8.19456C4.095 6.97352 4.69486 5.85191 5.57577 4.97161C6.45668 4.09131 7.57906 3.49187 8.80095 3.24912C10.0228 3.00636 11.2893 3.1312 12.4402 3.60784C13.5911 4.08448 14.5746 4.8915 15.2664 5.92683C15.9583 6.96215 16.3273 8.17926 16.3268 9.42419C16.3268 11.0927 15.6635 12.6928 14.4829 13.8726C13.3023 15.0524 11.7011 15.7152 10.0314 15.7152Z" fill="#0860C7"/>
+                                </svg>
+                            </div>
+                            <div class="footer-bottom-active-footer">
+                                <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                                    <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                                </svg>
+                                <p class="footer-bottom-active-country">Ukraine</p>
+                            </div>
+                            <div class="footer-bottom-active-footer">
+                                <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                                    <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                                </svg>
+                                <p class="footer-bottom-active-country">Ukraine</p>
+                            </div>
+                            <div class="footer-bottom-active-footer">
+                                <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                                    <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                                </svg>
+                                <p class="footer-bottom-active-country">Ukraine</p>
+                            </div>
+                            <div class="footer-bottom-active-footer">
+                                <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                                    <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                                </svg>
+                                <p class="footer-bottom-active-country">Ukraine</p>
+                            </div>
+                            <div class="footer-bottom-active-footer">
+                                <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                                    <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                                </svg>
+                                <p class="footer-bottom-active-country">Ukraine</p>
+                            </div>
+                            <div class="footer-bottom-active-footer">
+                                <svg width="25" height="13" viewBox="0 0 25 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24.2308" height="6.3" fill="#0057B8"/>
+                                    <rect y="6.2998" width="24.2308" height="6.3" fill="#FFD700"/>
+                                </svg>
+                                <p class="footer-bottom-active-country">Ukraine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-block3">
+                    <ul class="footer-options-list">
+                        <li class="footer-options-list-item footer-change-country-title"><b>Про нас</b></li>
+                        <li class="footer-options-list-item">Контакти</li>
+                        <li class="footer-options-list-item">Країни</li>
+                        <li class="footer-options-list-item">Каталог магазинів</li>
+                        <li class="footer-options-list-item">Новини</li>
+                        <li class="footer-options-list-item">Допомога</li>
+                    </ul>
+                </div>
+                <div class="footer-block4">
+                    <p class="footer-change-country-title">Ми в соцмережах</p>
+                    <div class="footer-social-networks">
+                        <svg class="footer-social-networks-items" width="40" height="40" viewBox="0 0 40 40"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="white"/>
+                            <path d="M21.6043 24.7416C21.6043 26.3089 21.6004 27.8722 21.6082 29.4395C21.6082 29.611 21.5614 29.6578 21.3899 29.6539C20.0565 29.6461 18.7271 29.6461 17.3938 29.6539C17.2105 29.6539 17.152 29.611 17.152 29.42C17.1598 26.3127 17.1559 23.2094 17.1559 20.1022C17.1559 19.7903 17.191 19.8293 16.8713 19.8254C16.306 19.8254 15.7407 19.8215 15.1754 19.8293C15.039 19.8293 15 19.7864 15 19.65C15.0039 18.6636 15.0039 17.6734 15 16.687C15 16.5506 15.039 16.5077 15.1754 16.5116C15.768 16.5194 16.3567 16.5077 16.9493 16.5194C17.1092 16.5233 17.1598 16.4804 17.1598 16.3127C17.152 15.4823 17.1598 14.648 17.1559 13.8176C17.152 13.1276 17.2573 12.4609 17.6043 11.8527C17.9786 11.1899 18.54 10.7338 19.2339 10.4375C19.8187 10.188 20.4347 10.071 21.0663 10.0359C22.3177 9.96577 23.5731 10.0242 24.8246 10.0009C24.9649 9.99696 25 10.0476 25 10.1802C24.9961 11.2055 24.9961 12.2348 25 13.2601C25 13.4161 24.9415 13.4395 24.8051 13.4395C24.0838 13.4356 23.3626 13.4356 22.6413 13.4356C22.0409 13.4356 21.6082 13.8683 21.6082 14.4609C21.6082 15.073 21.616 15.6812 21.6043 16.2933C21.6004 16.4687 21.6589 16.5116 21.8265 16.5116C22.8129 16.5038 23.8031 16.5116 24.7895 16.5038C24.9532 16.5038 25.0078 16.5506 24.9883 16.7143C24.9298 17.2172 24.8791 17.7202 24.8246 18.2231C24.7739 18.7065 24.6881 19.186 24.6101 19.6656C24.5867 19.802 24.5439 19.8332 24.4191 19.8332C23.5731 19.8293 22.731 19.8293 21.885 19.8332C21.5536 19.8332 21.6004 19.7903 21.6004 20.1256C21.6043 21.6617 21.6043 23.2016 21.6043 24.7416Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                        <img src="/img/icons/instagram.svg" alt="Instagram" class="footer-social-networks-items">
+                        <svg class="telegram" width="20" height="17" viewBox="0 0 20 17" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.9449 1.54769L16.9236 15.9735C16.7012 16.9963 16.1 17.2451 15.2611 16.7632L10.6601 13.3277L8.44244 15.4947C8.33378 15.6373 8.19435 15.7527 8.03485 15.8322C7.87534 15.9117 7.69999 15.9531 7.52225 15.9533H7.51458L7.84125 11.2058L16.3684 3.3991C16.7365 3.06799 16.2856 2.8799 15.7963 3.21101L5.26163 9.93578L0.722004 8.49942C-0.259537 8.18386 -0.287144 7.50454 0.929047 7.01643L18.6673 0.0864566C19.4925 -0.218226 20.2102 0.285433 19.9433 1.54924L19.9449 1.54769Z"
+                                  fill="#0860C7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright-info">© 2022 myMeest - доставка покупок з інтернет-магазинів світу в
+                    Україну.
+                    Всі права захищені</p>
+                <p class="footer-copyright-policy">Політика конфіденційності</p>
+            </div>
+
+        </footer>
+    </div>
+</div>
+</body>
+</html>
